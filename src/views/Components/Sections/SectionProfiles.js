@@ -30,9 +30,8 @@ export default function SectionProfile() {
             <h2>Members</h2>
           </div>
           <br />
-          <GridContainer spacing={3}>
-            <GridItem xs={3} implementation="css" smDown component={Hidden} />
-            <GridItem xs={12} sm={2}>
+          <GridContainer>
+            <GridItem xs={6} md={4}>
               <h5>Tiph Milstar (Propz)</h5>
               <img
                 src={tiph}
@@ -47,7 +46,7 @@ export default function SectionProfile() {
               />
               <h6>Lead Vocals</h6>
             </GridItem>
-            <GridItem xs={12} sm={2}>
+            <GridItem xs={6} md={4}>
               <h5>Mark Rinder</h5>
               <img
                 src={rinder}
@@ -62,7 +61,7 @@ export default function SectionProfile() {
               />
               <h6>Guitar, Backing Vocals</h6>
             </GridItem>
-            <GridItem xs={12} sm={2}>
+            <GridItem xs={6} md={4}>
               <h5>Liam Sullivan</h5>
               <img
                 src={liam}
@@ -77,10 +76,7 @@ export default function SectionProfile() {
               />
               <h6>Drums, Percussion</h6>
             </GridItem>
-          </GridContainer>
-          <GridContainer justifyContent="center" alignItems="center">
-            <GridItem xs={4} implementation="css" smDown component={Hidden} />
-            <GridItem xs={12} sm={2}>
+            <GridItem xs={6} md={4}>
               <h5>Matt Hickey</h5>
               <img
                 src={hickey}
@@ -95,7 +91,7 @@ export default function SectionProfile() {
               />
               <h6>Synths/Piano</h6>
             </GridItem>
-            <GridItem xs={12} sm={2}>
+            <GridItem xs={6} md={4}>
               <h5>Joe Pagan</h5>
               <img
                 src={joe}
