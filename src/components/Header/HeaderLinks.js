@@ -72,6 +72,7 @@ function RightHeaderLinks(props) {
             href="https://drive.google.com/drive/u/0/folders/0Bzsy3pa2O7zCZHdnT213SFBjVnc"
             color="transparent"
             target="_blank"
+            rel="noopener noreferrer"
             className={classes.navLink}
           >
             <CloudDownload className={classes.icons} />&nbsp;Press pack
@@ -88,6 +89,7 @@ function RightHeaderLinks(props) {
           <Button
             href="https://twitter.com/killermantis?ref=killermantis-website"
             target="_blank"
+            rel="noopener noreferrer"
             color="transparent"
             className={classes.navLink}
           >
@@ -106,6 +108,7 @@ function RightHeaderLinks(props) {
             color="transparent"
             href="https://www.facebook.com/killermantis?ref=killermantis-website"
             target="_blank"
+            rel="noopener noreferrer"
             className={classes.navLink}
           >
             <i className={classes.socialIcons + " fab fa-facebook"} />
@@ -123,6 +126,7 @@ function RightHeaderLinks(props) {
             color="transparent"
             href="https://www.instagram.com/killermantis?ref=killermantis-website"
             target="_blank"
+            rel="noopener noreferrer"
             className={classes.navLink}
           >
             <i className={classes.socialIcons + " fab fa-instagram"} />
@@ -140,6 +144,7 @@ function RightHeaderLinks(props) {
             color="transparent"
             href="https://www.spotify.com/killermantis?ref=killermantis-website"
             target="_blank"
+            rel="noopener noreferrer"
             className={classes.navLink}
           >
             <i className={classes.socialIcons + " fab fa-spotify"} />
@@ -157,6 +162,7 @@ function RightHeaderLinks(props) {
             color="transparent"
             href="https://www.soundcloud.com/killermantis?ref=killermantis-website"
             target="_blank"
+            rel="noopener noreferrer"
             className={classes.navLink}
           >
             <i className={classes.socialIcons + " fab fa-soundcloud"} />
@@ -174,6 +180,7 @@ function RightHeaderLinks(props) {
             color="transparent"
             href="https://www.youtube.com/killermantis?ref=killermantis-website"
             target="_blank"
+            rel="noopener noreferrer"
             className={classes.navLink}
           >
             <i className={classes.socialIcons + " fab fa-youtube"} />

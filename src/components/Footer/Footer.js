@@ -37,6 +37,7 @@ export default function Footer(props) {
             href="https://joepagan.github.io/"
             className={aClasses}
             target="_blank"
+            rel="noopener noreferrer"
           >
             Joe Pagan
           </a>
