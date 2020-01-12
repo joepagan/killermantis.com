@@ -14,7 +14,7 @@ const useStyles = makeStyles(styles);
 export default function SectionText() {
   const classes = useStyles();
   return (
-    <div className={classes.section}>
+    <div id="about" className={classes.section}>
       <div className={classes.container}>
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={8}>

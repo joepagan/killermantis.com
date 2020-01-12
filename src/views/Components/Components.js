@@ -16,6 +16,7 @@ import HeaderLinks from "components/Header/HeaderLinks.js";
 import SectionMedia from "./Sections/SectionMedia.js";
 import SectionProfiles from "./Sections/SectionProfiles.js";
 import SectionText from "./Sections/SectionText.js";
+import SectionShows from "./Sections/SectionShows.js";
 // import SectionTable from "./Sections/SectionTable.js";
 
 import styles from "assets/jss/material-kit-react/views/components.js";
@@ -58,6 +59,7 @@ export default function Components(props) {
         <SectionText />
         <SectionMedia />
         <SectionProfiles />
+        <SectionShows />
         {/* <SectionTable /> */}
       </div>
       <Footer />

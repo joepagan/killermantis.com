@@ -37,20 +37,20 @@ function LeftHeaderLinks(props) {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="#music"
+          href="#media"
           color="transparent"
           className={classes.navLink}
         >
-          Music
+          Media
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="#gigs-events"
+          href="#shows"
           color="transparent"
           className={classes.navLink}
         >
-          Gigs / Events
+          Shows
         </Button>
       </ListItem>
     </List>
