@@ -22,7 +22,7 @@ export default function SectionShows() {
           <GridItem xs={12} sm={12} md={12} lg={12}>
             <iframe
               className={classes.shows}
-              src="https://www.reverbnation.com/widget_code/html_widget/artist_635831?widget_id=52&amp;posted_by=artist_6779616&pwc[design]=default&pwc[background_color]=%23333333&pwc[layout]=detailed&pwc[show_map]=0%2C1&pwc[size]=fit"
+              src="https://www.reverbnation.com/widget_code/html_widget/artist_6779616?widget_id=52&amp;posted_by=artist_6779616&pwc[design]=customized&pwc[background_color]=%23212121&pwc[layout]=detailed&pwc[show_map]=0%2C1&pwc[size]=fit"
               width="100%"
               height="100%"
               frameBorder="0"
