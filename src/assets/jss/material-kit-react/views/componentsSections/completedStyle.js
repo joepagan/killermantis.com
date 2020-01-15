@@ -6,7 +6,11 @@ const completedStyle = {
   },
   container: {
     ...container,
-    textAlign: "center !important"
+    textAlign: "center !important",
+  },
+  paragraph: {
+    fontSize: "1.25rem",
+    lineHeight: "2.25rem"
   }
 };
 

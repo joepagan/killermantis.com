@@ -1,7 +1,6 @@
 import React from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-import { Hidden, Typography } from "@material-ui/core";
 
 // @material-ui/icons
 
@@ -22,7 +21,7 @@ const useStyles = makeStyles(styles);
 export default function SectionProfile() {
   const classes = useStyles();
   return (
-    <div className={classes.section}>
+    <div id="profiles" className={classes.section}>
       <div className={classes.container}>
         <div className={classes.space50} />
         <div id="images">
@@ -32,7 +31,7 @@ export default function SectionProfile() {
           <br />
           <GridContainer>
             <GridItem xs={6} md={4}>
-              <h5>Tiph Milstar (Propz)</h5>
+              <h5 className={classes.name}>Tiph Milstar (Propz)</h5>
               <img
                 src={tiph}
                 alt="Tiph Milstar"
@@ -44,10 +43,10 @@ export default function SectionProfile() {
                   classes.imgFluid
                 }
               />
-              <h6>Lead Vocals</h6>
+              <h6 className={classes.role}>Lead Vocals</h6>
             </GridItem>
             <GridItem xs={6} md={4}>
-              <h5>Mark Rinder</h5>
+              <h5 className={classes.name}>Mark Rinder</h5>
               <img
                 src={rinder}
                 alt="Mark Rinder"
@@ -59,10 +58,10 @@ export default function SectionProfile() {
                   classes.imgFluid
                 }
               />
-              <h6>Guitar, Backing Vocals</h6>
+              <h6 className={classes.role}>Guitar, Backing Vocals</h6>
             </GridItem>
             <GridItem xs={6} md={4}>
-              <h5>Liam Sullivan</h5>
+              <h5 className={classes.name}>Liam Sullivan</h5>
               <img
                 src={liam}
                 alt="Liam Sullivan"
@@ -74,10 +73,10 @@ export default function SectionProfile() {
                   classes.imgFluid
                 }
               />
-              <h6>Drums, Percussion</h6>
+              <h6 className={classes.role}>Drums, Percussion</h6>
             </GridItem>
             <GridItem xs={6} md={4}>
-              <h5>Matt Hickey</h5>
+              <h5 className={classes.name}>Matt Hickey</h5>
               <img
                 src={hickey}
                 alt="Matt Hickey"
@@ -89,10 +88,10 @@ export default function SectionProfile() {
                   classes.imgFluid
                 }
               />
-              <h6>Synths/Piano</h6>
+              <h6 className={classes.role}>Synths/Piano</h6>
             </GridItem>
             <GridItem xs={6} md={4}>
-              <h5>Joe Pagan</h5>
+              <h5 className={classes.name}>Joe Pagan</h5>
               <img
                 src={joe}
                 alt="Joe Pagan"
@@ -104,7 +103,7 @@ export default function SectionProfile() {
                   classes.imgFluid
                 }
               />
-              <h6>Bass, Backing Vocals</h6>
+              <h6 className={classes.role}>Bass, Backing Vocals</h6>
             </GridItem>
           </GridContainer>
           <GridContainer />
