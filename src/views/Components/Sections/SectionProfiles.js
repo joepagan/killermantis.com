@@ -1,5 +1,6 @@
-import React from "react";
-import ReactPlayer from 'react-player'
+npm i react-device-detectimport React from "react";
+import ReactPlayer from 'react-player';
+import { isMobile } from "react-device-detect";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -19,9 +20,6 @@ import joeImage from "assets/img/profiles/joe.jpg";
 import joeVideo from "assets/video/joe.mp4";
 
 const useStyles = makeStyles(styles);
-
-
-
 
 export default function SectionProfile() {
   const classes = useStyles();
@@ -100,13 +98,16 @@ export default function SectionProfile() {
               <div className={classes.playerWrapper}>
                 <ReactPlayer
                   url={joeVideo}
-                  // config={{
-                  //   file: {
-                  //     attributes: {
-                  //       poster: joeImage,
-                  //     }
-                  //   }
-                  // }}
+                  config={{
+                    file: {
+                      attributes: {
+                        poster: joeImage,
+                      }
+                    }
+                  }}
+                  light={
+                    isMobile ? joeImage : false
+                  }
                   className={
                     classes.player +
                     " " +
