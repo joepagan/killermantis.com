@@ -1,4 +1,5 @@
 import React from "react";
+import ReactPlayer from 'react-player'
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -14,9 +15,13 @@ import rinder from "assets/img/profiles/rinder.jpg";
 import tiph from "assets/img/profiles/tiph.jpg";
 import liam from "assets/img/profiles/liam.jpg";
 import hickey from "assets/img/profiles/hickey.jpg";
-import joe from "assets/img/profiles/joe.jpg";
+import joeImage from "assets/img/profiles/joe.jpg";
+import joeVideo from "assets/video/joe.mp4";
 
 const useStyles = makeStyles(styles);
+
+
+
 
 export default function SectionProfile() {
   const classes = useStyles();
@@ -92,7 +97,34 @@ export default function SectionProfile() {
             </GridItem>
             <GridItem xs={6} md={4}>
               <h5 className={classes.name}>Joe Pagan</h5>
-              <img
+              <div className={classes.playerWrapper}>
+                <ReactPlayer
+                  url={joeVideo}
+                  config={{
+                    file: {
+                      attributes: {
+                        poster: joeImage,
+                      }
+                    }
+                  }}
+                  className={
+                    classes.player +
+                    " " +
+                    classes.imgRaised +
+                    " " +
+                    classes.imgRounded +
+                    " " +
+                    classes.imgFluid
+                  }
+                  autoPlay
+                  muted
+                  playing
+                  loop
+                  width="100%"
+                  height="100%"
+                />
+              </div>
+              {/* <img
                 src={joe}
                 alt="Joe Pagan"
                 className={
@@ -102,7 +134,7 @@ export default function SectionProfile() {
                   " " +
                   classes.imgFluid
                 }
-              />
+              /> */}
               <h6 className={classes.role}>Bass, Backing Vocals</h6>
             </GridItem>
           </GridContainer>
