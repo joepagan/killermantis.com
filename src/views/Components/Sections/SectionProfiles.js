@@ -1,4 +1,4 @@
-npm i react-device-detectimport React from "react";
+import React from "react";
 import ReactPlayer from 'react-player';
 import { isMobile } from "react-device-detect";
 // @material-ui/core components
