@@ -100,13 +100,13 @@ export default function SectionProfile() {
               <div className={classes.playerWrapper}>
                 <ReactPlayer
                   url={joeVideo}
-                  config={{
-                    file: {
-                      attributes: {
-                        poster: joeImage,
-                      }
-                    }
-                  }}
+                  // config={{
+                  //   file: {
+                  //     attributes: {
+                  //       poster: joeImage,
+                  //     }
+                  //   }
+                  // }}
                   className={
                     classes.player +
                     " " +
