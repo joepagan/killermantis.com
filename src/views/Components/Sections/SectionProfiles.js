@@ -97,17 +97,6 @@ export default function SectionProfile() {
               <h5 className={classes.name}>Joe Pagan</h5>
               <div className={classes.playerWrapper}>
                 <ReactPlayer
-                  url={joeVideo}
-                  config={{
-                    file: {
-                      attributes: {
-                        poster: joeImage,
-                      }
-                    }
-                  }}
-                  light={
-                    isMobile ? joeImage : false
-                  }
                   className={
                     classes.player +
                     " " +
@@ -117,6 +106,16 @@ export default function SectionProfile() {
                     " " +
                     classes.imgFluid
                   }
+                  url={joeVideo}
+                  config={{
+                    file: {
+                      attributes: {
+                        poster: joeImage
+                      }
+                    }
+                  }}
+                  light={isMobile ? joeImage : false}
+                  playsinline
                   autoPlay
                   muted
                   playing
