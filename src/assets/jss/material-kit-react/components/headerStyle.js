@@ -68,6 +68,12 @@ const headerStyle = {
   appResponsive: {
     margin: "20px 10px"
   },
+  scrollLink: {
+    color: "#fff",
+    "&,&:focus,&:hover,&:visited": {
+      color: "#fff"
+    }
+  },
   primary: {
     backgroundColor: primaryColor,
     color: "#FFFFFF",

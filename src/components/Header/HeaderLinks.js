@@ -4,7 +4,9 @@ import DeleteIcon from "@material-ui/icons/Delete";
 import IconButton from "@material-ui/core/IconButton";
 // react components for routing our app without refresh
 import { Link } from "react-router-dom";
-
+// scroll links
+import * as Scroll from 'react-scroll';
+let ScrollLink = Scroll.Link;
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
@@ -27,31 +29,48 @@ function LeftHeaderLinks(props) {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
-        <Button
-          href="#about"
-          color="transparent"
-          className={classes.navLink}
-        >
-          About
-        </Button>
+        <ScrollLink className={classes.scrollLink} to="about" spy={true} smooth="easeOutQuint" duration={500}>
+          <Button
+            href="#about"
+            color="transparent"
+            className={classes.navLink}
+          >
+            About
+          </Button>
+        </ScrollLink>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Button
-          href="#media"
-          color="transparent"
-          className={classes.navLink}
-        >
-          Media
-        </Button>
+        <ScrollLink className={classes.scrollLink} to="media" spy={true} smooth="easeOutQuint" duration={500}>
+          <Button
+            href="#media"
+            color="transparent"
+            className={classes.navLink}
+          >
+            Media
+          </Button>
+        </ScrollLink>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Button
-          href="#shows"
-          color="transparent"
-          className={classes.navLink}
-        >
-          Shows
-        </Button>
+        <ScrollLink className={classes.scrollLink} to="profiles" spy={true} smooth="easeOutQuint" duration={500}>
+          <Button
+            href="#profiles"
+            color="transparent"
+            className={classes.navLink}
+          >
+            Profiles
+          </Button>
+        </ScrollLink>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <ScrollLink className={classes.scrollLink} to="shows" spy={true} smooth="easeOutQuint" duration={500}>
+          <Button
+            href="#shows"
+            color="transparent"
+            className={classes.navLink}
+          >
+            Shows
+          </Button>
+        </ScrollLink>
       </ListItem>
     </List>
   );

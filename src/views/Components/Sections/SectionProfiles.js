@@ -31,7 +31,7 @@ export default function SectionProfile() {
         <div className={classes.space50} />
         <div id="images">
           <div className={classes.title}>
-            <h2>Members</h2>
+            <h2>Profiles</h2>
           </div>
           <br />
           <GridContainer>

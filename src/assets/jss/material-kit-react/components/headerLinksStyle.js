@@ -36,6 +36,12 @@ const headerLinksStyle = theme => ({
   listItemText: {
     padding: "0 !important"
   },
+  scrollLink: {
+    color: "#fff",
+    "&,&:focus,&:hover,&:visited": {
+      color: "#fff"
+    }
+  },
   navLink: {
     color: "inherit",
     position: "relative",

@@ -3,6 +3,8 @@ import React from "react";
 import classNames from "classnames";
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
+// scroll links
+import * as Scroll from "react-scroll";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
@@ -16,6 +18,7 @@ import Menu from "@material-ui/icons/Menu";
 // core components
 import styles from "assets/jss/material-kit-react/components/headerStyle.js";
 
+let ScrollLink = Scroll.Link;
 const useStyles = makeStyles(styles);
 
 export default function Header(props) {
@@ -60,7 +63,17 @@ export default function Header(props) {
     [classes.absolute]: absolute,
     [classes.fixed]: fixed
   });
-  const brandComponent = <Button className={classes.title}>{brand}</Button>;
+  const brandComponent = (
+    <ScrollLink
+      className={classes.scrollLink}
+      to="root"
+      spy={true}
+      smooth="easeOutQuint"
+      duration={500}
+    >
+      <Button className={classes.title}>{brand}</Button>
+    </ScrollLink>
+  );
   return (
     <AppBar className={appBarClasses}>
       <Toolbar className={classes.container}>
