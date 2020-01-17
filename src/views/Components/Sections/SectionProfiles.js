@@ -12,10 +12,12 @@ import GridItem from "components/Grid/GridItem.js";
 
 import styles from "assets/jss/material-kit-react/views/componentsSections/profilesStyle.js";
 
-import rinder from "assets/img/profiles/rinder.jpg";
+import rinderImage from "assets/img/profiles/rinder.jpg";
+import rinderVideo from "assets/video/rinder.mp4";
 import tiph from "assets/img/profiles/tiph.jpg";
 import liam from "assets/img/profiles/liam.jpg";
-import hickey from "assets/img/profiles/hickey.jpg";
+import hickeyImage from "assets/img/profiles/hickey.jpg";
+import hickeyVideo from "assets/video/hickey.mp4";
 import joeImage from "assets/img/profiles/joe.jpg";
 import joeVideo from "assets/video/joe.mp4";
 
@@ -50,17 +52,35 @@ export default function SectionProfile() {
             </GridItem>
             <GridItem xs={6} md={4}>
               <h5 className={classes.name}>Mark Rinder</h5>
-              <img
-                src={rinder}
-                alt="Mark Rinder"
-                className={
-                  classes.imgRaised +
-                  " " +
-                  classes.imgRounded +
-                  " " +
-                  classes.imgFluid
-                }
-              />
+              <div className={classes.playerWrapper}>
+                <ReactPlayer
+                  className={
+                    classes.player +
+                    " " +
+                    classes.imgRaised +
+                    " " +
+                    classes.imgRounded +
+                    " " +
+                    classes.imgFluid
+                  }
+                  url={rinderVideo}
+                  config={{
+                    file: {
+                      attributes: {
+                        poster: rinderImage
+                      }
+                    }
+                  }}
+                  light={isMobile ? rinderImage : false}
+                  playsinline
+                  autoPlay
+                  muted
+                  playing
+                  loop
+                  width="100%"
+                  height="100%"
+                />
+              </div>
               <h6 className={classes.role}>Guitar, Backing Vocals</h6>
             </GridItem>
             <GridItem xs={6} md={4}>
@@ -80,17 +100,35 @@ export default function SectionProfile() {
             </GridItem>
             <GridItem xs={6} md={4}>
               <h5 className={classes.name}>Matt Hickey</h5>
-              <img
-                src={hickey}
-                alt="Matt Hickey"
-                className={
-                  classes.imgRaised +
-                  " " +
-                  classes.imgRounded +
-                  " " +
-                  classes.imgFluid
-                }
-              />
+              <div className={classes.playerWrapper}>
+                <ReactPlayer
+                  className={
+                    classes.player +
+                    " " +
+                    classes.imgRaised +
+                    " " +
+                    classes.imgRounded +
+                    " " +
+                    classes.imgFluid
+                  }
+                  url={hickeyVideo}
+                  config={{
+                    file: {
+                      attributes: {
+                        poster: hickeyImage
+                      }
+                    }
+                  }}
+                  light={isMobile ? hickeyImage : false}
+                  playsinline
+                  autoPlay
+                  muted
+                  playing
+                  loop
+                  width="100%"
+                  height="100%"
+                />
+              </div>
               <h6 className={classes.role}>Synths/Piano</h6>
             </GridItem>
             <GridItem xs={6} md={4}>
@@ -124,17 +162,6 @@ export default function SectionProfile() {
                   height="100%"
                 />
               </div>
-              {/* <img
-                src={joe}
-                alt="Joe Pagan"
-                className={
-                  classes.imgRaised +
-                  " " +
-                  classes.imgRounded +
-                  " " +
-                  classes.imgFluid
-                }
-              /> */}
               <h6 className={classes.role}>Bass, Backing Vocals</h6>
             </GridItem>
           </GridContainer>
