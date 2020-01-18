@@ -10,12 +10,14 @@ const componentsStyle = {
     fontSize: "6rem",
     fontWeight: "600",
     display: "inline-block",
-    position: "relative"
+    position: "relative",
+    textShadow: "0 0 10px rgba(0,0,0,1)"
   },
   subtitle: {
     fontSize: "1.313rem",
     maxWidth: "500px",
-    margin: "10px 0 0"
+    margin: "10px 0 0",
+    textShadow: "0 0 10px rgba(0,0,0,1)"
   },
   main: {
     background: "#FFFFFF",
