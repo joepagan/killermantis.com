@@ -29,47 +29,19 @@ function LeftHeaderLinks(props) {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
-        <ScrollLink className={classes.scrollLink} to="about" spy={true} smooth="easeOutQuint" duration={500}>
-          <Button
-            href="#about"
-            color="transparent"
-            className={classes.navLink}
-          >
-            About
-          </Button>
+        <ScrollLink className={classes.scrollLink + " " + classes.navLink} to="about" spy={true} smooth="easeOutQuint" duration={500} color="transparent">About</ScrollLink>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <ScrollLink className={classes.scrollLink + " " + classes.navLink} to="media" spy={true} smooth="easeOutQuint" duration={500} color="transparent">Media</ScrollLink>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <ScrollLink className={classes.scrollLink + " " + classes.navLink} to="profiles" spy={true} smooth="easeOutQuint" duration={500} color="transparent">
+          Profiles
         </ScrollLink>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <ScrollLink className={classes.scrollLink} to="media" spy={true} smooth="easeOutQuint" duration={500}>
-          <Button
-            href="#media"
-            color="transparent"
-            className={classes.navLink}
-          >
-            Media
-          </Button>
-        </ScrollLink>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <ScrollLink className={classes.scrollLink} to="profiles" spy={true} smooth="easeOutQuint" duration={500}>
-          <Button
-            href="#profiles"
-            color="transparent"
-            className={classes.navLink}
-          >
-            Profiles
-          </Button>
-        </ScrollLink>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <ScrollLink className={classes.scrollLink} to="shows" spy={true} smooth="easeOutQuint" duration={500}>
-          <Button
-            href="#shows"
-            color="transparent"
-            className={classes.navLink}
-          >
-            Shows
-          </Button>
+        <ScrollLink className={classes.scrollLink + " " + classes.navLink} to="shows" spy={true} smooth="easeOutQuint" duration={500} color="transparent">
+          Shows
         </ScrollLink>
       </ListItem>
     </List>

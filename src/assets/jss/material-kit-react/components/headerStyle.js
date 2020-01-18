@@ -70,6 +70,7 @@ const headerStyle = {
   },
   scrollLink: {
     color: "#fff",
+    cursor: "pointer",
     "&,&:focus,&:hover,&:visited": {
       color: "#fff"
     }

@@ -38,6 +38,7 @@ const headerLinksStyle = theme => ({
   },
   scrollLink: {
     color: "#fff",
+    cursor: "pointer",
     "&,&:focus,&:hover,&:visited": {
       color: "#fff"
     }

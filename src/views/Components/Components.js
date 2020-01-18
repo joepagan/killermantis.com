@@ -1,6 +1,8 @@
 import React from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
+import LazyLoad from 'react-lazyload';
+
 // react components for routing our app without refresh
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
@@ -19,6 +21,7 @@ import SectionText from "./Sections/SectionText.js";
 import SectionShows from "./Sections/SectionShows.js";
 // import SectionTable from "./Sections/SectionTable.js";
 
+import hero from "assets/img/heroes/hero-bg.jpg";
 import styles from "assets/jss/material-kit-react/views/components.js";
 
 const useStyles = makeStyles(styles);
@@ -40,26 +43,36 @@ export default function Components(props) {
         }}
         {...rest}
       />
-      <Parallax image="https://impyus.com/uploads/images/events/2017-06-16/ceiling-demons-dan-audio-the-breaks-terra-ist-impyus/_2000xAUTO_crop_center-center_80/DSC_9513.jpg">
-        <div className={classes.container}>
-          <GridContainer>
-            <GridItem>
-              <div className={classes.brand}>
-                <h1 className={classes.title}>Killer Mantis</h1>
-                <h3 className={classes.subtitle}>
-                  A 5-piece from Yorkshire ( Leeds & Harrogate ).
-                </h3>
-              </div>
-            </GridItem>
-          </GridContainer>
-        </div>
-      </Parallax>
+      <LazyLoad once height={200}>
+        <Parallax image={hero} >
+          <div className={classes.container}>
+            <GridContainer>
+              <GridItem>
+                <div className={classes.brand}>
+                  <h1 className={classes.title}>Killer Mantis</h1>
+                  <h3 className={classes.subtitle}>
+                    A 5-piece from Yorkshire ( Leeds & Harrogate ).
+                  </h3>
+                </div>
+              </GridItem>
+            </GridContainer>
+          </div>
+        </Parallax>
+      </LazyLoad>
 
       <div className={classNames(classes.main, classes.mainRaised)}>
-        <SectionText />
-        <SectionMedia />
-        <SectionProfiles />
-        <SectionShows />
+        <LazyLoad once height={200} placeholder={<div id="about"></div>}>
+          <SectionText />
+        </LazyLoad>
+        <LazyLoad once height={200} placeholder={<div id="media"></div>}>
+          <SectionMedia />
+        </LazyLoad>
+        <LazyLoad once height={200} placeholder={<div id="profiles"></div>}>
+          <SectionProfiles />
+        </LazyLoad>
+        <LazyLoad once height={200} placeholder={<div id="shows"></div>}>
+          <SectionShows />
+        </LazyLoad>
         {/* <SectionTable /> */}
       </div>
       <Footer />

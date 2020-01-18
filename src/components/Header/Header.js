@@ -18,7 +18,7 @@ import Menu from "@material-ui/icons/Menu";
 // core components
 import styles from "assets/jss/material-kit-react/components/headerStyle.js";
 
-let ScrollLink = Scroll.Link;
+const ScrollLink = Scroll.Link;
 const useStyles = makeStyles(styles);
 
 export default function Header(props) {
@@ -65,13 +65,13 @@ export default function Header(props) {
   });
   const brandComponent = (
     <ScrollLink
-      className={classes.scrollLink}
+      className={classes.scrollLink + " " + classes.title}
       to="root"
       spy={true}
       smooth="easeOutQuint"
       duration={500}
     >
-      <Button className={classes.title}>{brand}</Button>
+      {brand}
     </ScrollLink>
   );
   return (
