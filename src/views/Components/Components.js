@@ -21,7 +21,7 @@ import SectionText from "./Sections/SectionText.js";
 import SectionShows from "./Sections/SectionShows.js";
 // import SectionTable from "./Sections/SectionTable.js";
 
-import hero from "assets/img/heroes/hero-bg.jpg";
+import hero from "assets/img/heroes/hero-bg.webp";
 import styles from "assets/jss/material-kit-react/views/components.js";
 
 const useStyles = makeStyles(styles);
@@ -44,7 +44,7 @@ export default function Components(props) {
         {...rest}
       />
       <LazyLoad once height={200}>
-        <Parallax image={hero} >
+        <Parallax image={hero}>
           <div className={classes.container}>
             <GridContainer>
               <GridItem>

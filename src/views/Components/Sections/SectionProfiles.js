@@ -12,13 +12,13 @@ import GridItem from "components/Grid/GridItem.js";
 
 import styles from "assets/jss/material-kit-react/views/componentsSections/profilesStyle.js";
 
-import rinderImage from "assets/img/profiles/rinder-400.jpg";
+import rinderImage from "assets/img/profiles/rinder-400.webp";
 import rinderVideo from "assets/video/rinder.mp4";
-import tiph from "assets/img/profiles/tiph.jpg";
-import liam from "assets/img/profiles/liam.jpg";
-import hickeyImage from "assets/img/profiles/hickey-400.jpg";
+import tiph from "assets/img/profiles/tiph.webp";
+import liam from "assets/img/profiles/liam.webp";
+import hickeyImage from "assets/img/profiles/hickey-400.webp";
 import hickeyVideo from "assets/video/hickey.mp4";
-import joeImage from "assets/img/profiles/joe-400.jpg";
+import joeImage from "assets/img/profiles/joe-400.webp";
 import joeVideo from "assets/video/joe.mp4";
 
 const useStyles = makeStyles(styles);
