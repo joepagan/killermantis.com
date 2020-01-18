@@ -1,23 +1,24 @@
 {
   "files": {
     "main.css": "/static/css/main.7e400310.chunk.css",
-    "main.js": "/static/js/main.a3247d12.chunk.js",
-    "main.js.map": "/static/js/main.a3247d12.chunk.js.map",
+    "main.js": "/static/js/main.5835e40b.chunk.js",
+    "main.js.map": "/static/js/main.5835e40b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.7059143a.js",
     "runtime-main.js.map": "/static/js/runtime-main.7059143a.js.map",
-    "static/js/2.427ea4e3.chunk.js": "/static/js/2.427ea4e3.chunk.js",
-    "static/js/2.427ea4e3.chunk.js.map": "/static/js/2.427ea4e3.chunk.js.map",
+    "static/js/2.f403c2f6.chunk.js": "/static/js/2.f403c2f6.chunk.js",
+    "static/js/2.f403c2f6.chunk.js.map": "/static/js/2.f403c2f6.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.bb91933d3a4a8e6b46d2b0772c2d0d85.js": "/precache-manifest.bb91933d3a4a8e6b46d2b0772c2d0d85.js",
+    "precache-manifest.e88f6dee536dbc23689e280aae63237c.js": "/precache-manifest.e88f6dee536dbc23689e280aae63237c.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.7e400310.chunk.css.map": "/static/css/main.7e400310.chunk.css.map",
-    "static/js/2.427ea4e3.chunk.js.LICENSE": "/static/js/2.427ea4e3.chunk.js.LICENSE",
+    "static/js/2.f403c2f6.chunk.js.LICENSE": "/static/js/2.f403c2f6.chunk.js.LICENSE",
     "static/media/avatar.jpg": "/static/media/avatar.f1d71f77.jpg",
     "static/media/bg7.jpg": "/static/media/bg7.b08234a2.jpg",
     "static/media/christian.jpg": "/static/media/christian.56633ed3.jpg",
     "static/media/clem-onojegaw.jpg": "/static/media/clem-onojegaw.c058841b.jpg",
     "static/media/clem-onojeghuo.jpg": "/static/media/clem-onojeghuo.216ef03c.jpg",
     "static/media/cynthia-del-rio.jpg": "/static/media/cynthia-del-rio.9813593c.jpg",
+    "static/media/hero-bg.jpg": "/static/media/hero-bg.2ac66209.jpg",
     "static/media/hickey.mp4": "/static/media/hickey.9b02aaa0.mp4",
     "static/media/hickey.jpg": "/static/media/hickey.d9279d1a.jpg",
     "static/media/joe.jpg": "/static/media/joe.303208a9.jpg",
@@ -39,8 +40,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.7059143a.js",
-    "static/js/2.427ea4e3.chunk.js",
+    "static/js/2.f403c2f6.chunk.js",
     "static/css/main.7e400310.chunk.css",
-    "static/js/main.a3247d12.chunk.js"
+    "static/js/main.5835e40b.chunk.js"
   ]
 }
