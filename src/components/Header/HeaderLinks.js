@@ -7,6 +7,11 @@ import { Link } from "react-router-dom";
 // scroll links
 import * as Scroll from 'react-scroll';
 let ScrollLink = Scroll.Link;
+
+// Font awesome
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTwitter, faFacebookF, faInstagram, faSpotify, faSoundcloud, faYoutube } from '@fortawesome/free-brands-svg-icons'
+
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
@@ -84,7 +89,7 @@ function RightHeaderLinks(props) {
             color="transparent"
             className={classes.navLink}
           >
-            <i className={classes.socialIcons + " fab fa-twitter"} />
+            <FontAwesomeIcon className={classes.icons} icon={faTwitter} />
           </Button>
         </Tooltip>
       </ListItem>
@@ -102,7 +107,7 @@ function RightHeaderLinks(props) {
             rel="noopener noreferrer"
             className={classes.navLink}
           >
-            <i className={classes.socialIcons + " fab fa-facebook"} />
+            <FontAwesomeIcon className={classes.icons} icon={faFacebookF} />
           </Button>
         </Tooltip>
       </ListItem>
@@ -120,7 +125,7 @@ function RightHeaderLinks(props) {
             rel="noopener noreferrer"
             className={classes.navLink}
           >
-            <i className={classes.socialIcons + " fab fa-instagram"} />
+            <FontAwesomeIcon className={classes.icons} icon={faInstagram} />
           </Button>
         </Tooltip>
       </ListItem>
@@ -138,7 +143,7 @@ function RightHeaderLinks(props) {
             rel="noopener noreferrer"
             className={classes.navLink}
           >
-            <i className={classes.socialIcons + " fab fa-spotify"} />
+            <FontAwesomeIcon className={classes.icons} icon={faSpotify} />
           </Button>
         </Tooltip>
       </ListItem>
@@ -156,7 +161,7 @@ function RightHeaderLinks(props) {
             rel="noopener noreferrer"
             className={classes.navLink}
           >
-            <i className={classes.socialIcons + " fab fa-soundcloud"} />
+            <FontAwesomeIcon className={classes.icons} icon={faSoundcloud} />
           </Button>
         </Tooltip>
       </ListItem>
@@ -174,7 +179,7 @@ function RightHeaderLinks(props) {
             rel="noopener noreferrer"
             className={classes.navLink}
           >
-            <i className={classes.socialIcons + " fab fa-youtube"} />
+            <FontAwesomeIcon className={classes.icons} icon={faYoutube} />
           </Button>
         </Tooltip>
       </ListItem>

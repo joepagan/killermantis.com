@@ -98,8 +98,8 @@ const headerLinksStyle = theme => ({
     backgroundColor: "rgba(255, 255, 255, 0.1)"
   },
   icons: {
-    width: "20px",
-    height: "20px",
+    width: "20px !important",
+    height: "20px !important",
     marginRight: "3px"
   },
   socialIcons: {
