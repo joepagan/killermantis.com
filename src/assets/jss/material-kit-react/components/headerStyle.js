@@ -12,7 +12,9 @@ import {
   drawerWidth
 } from "assets/jss/material-kit-react.js";
 
-const headerStyle = {
+const mantisGreen = "#08ff00";
+
+const headerStyle = theme => ({
   appBar: {
     display: "flex",
     border: "0",
@@ -57,23 +59,31 @@ const headerStyle = {
     fontSize: "18px",
     borderRadius: "3px",
     textTransform: "none",
-    color: "inherit",
+    fontFamily: "'Bebas Neue', 'Helvetica', 'Arial', sans-serif",
+    letterSpacing: "10px",
+    color: mantisGreen,
     padding: "8px 16px",
-    letterSpacing: "unset",
+    textShadow: "0 0 2px rgba(0,0,0,1)",
+    [theme.breakpoints.down("md")]: {
+      maxWidth: "130px"
+    },
+    [theme.breakpoints.down("sm")]: {
+      maxWidth: "none"
+    },
     "&:hover,&:focus": {
-      color: "inherit",
+      color: mantisGreen,
       background: "transparent"
     }
   },
   appResponsive: {
     margin: "20px 10px"
   },
+  bars: {
+    color: mantisGreen
+  },
   scrollLink: {
-    color: "#fff",
-    cursor: "pointer",
-    "&,&:focus,&:hover,&:visited": {
-      color: "#fff"
-    }
+    cursor: "pointer"
+    // "&,&:focus,&:hover,&:visited": {}
   },
   primary: {
     backgroundColor: primaryColor,
@@ -154,6 +164,6 @@ const headerStyle = {
     paddingLeft: "0",
     ...transition
   }
-};
+});
 
 export default headerStyle;

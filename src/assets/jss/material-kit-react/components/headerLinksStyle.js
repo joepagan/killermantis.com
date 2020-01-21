@@ -1,6 +1,7 @@
 import { defaultFont } from "assets/jss/material-kit-react.js";
 
 import tooltip from "assets/jss/material-kit-react/tooltipsStyle.js";
+const mantisGreen = "#08ff00";
 
 const headerLinksStyle = theme => ({
   list: {
@@ -15,7 +16,7 @@ const headerLinksStyle = theme => ({
   },
   listItem: {
     float: "left",
-    color: "inherit",
+    color: mantisGreen,
     position: "relative",
     display: "block",
     width: "auto",
@@ -23,6 +24,8 @@ const headerLinksStyle = theme => ({
     padding: "0",
     [theme.breakpoints.down("sm")]: {
       width: "100%",
+      color: "rgba(0, 0, 0, 0.87)",
+      textShadow: "none",
       "&:after": {
         width: "calc(100% - 30px)",
         content: '""',
@@ -37,14 +40,11 @@ const headerLinksStyle = theme => ({
     padding: "0 !important"
   },
   scrollLink: {
-    color: "#fff",
-    cursor: "pointer",
-    "&,&:focus,&:hover,&:visited": {
-      color: "#fff"
-    }
+    cursor: "pointer"
+    // "&,&:focus,&:hover,&:visited": {}
   },
   navLink: {
-    color: "inherit",
+    color: mantisGreen,
     position: "relative",
     padding: "0.9375rem",
     fontWeight: "400",
@@ -52,11 +52,12 @@ const headerLinksStyle = theme => ({
     textTransform: "uppercase",
     borderRadius: "3px",
     lineHeight: "20px",
+    textShadow: "0 0 2px rgba(0,0,0,1)",
     textDecoration: "none",
     margin: "0px",
     display: "inline-flex",
     "&:hover,&:focus": {
-      color: "inherit",
+      color: mantisGreen,
       background: "rgba(200, 200, 200, 0.2)"
     },
     [theme.breakpoints.down("sm")]: {
@@ -65,6 +66,8 @@ const headerLinksStyle = theme => ({
       marginBottom: "8px",
       marginTop: "8px",
       textAlign: "left",
+      color: "rgba(0, 0, 0, 0.87)",
+      textShadow: "none",
       "& > span:first-child": {
         justifyContent: "flex-start"
       }
@@ -100,7 +103,14 @@ const headerLinksStyle = theme => ({
   icons: {
     width: "20px !important",
     height: "20px !important",
-    marginRight: "3px"
+    marginRight: "3px",
+    color: mantisGreen,
+    filter: "drop-shadow( 0px 0px 2px rgba(0, 0, 0, 1))",
+    [theme.breakpoints.down("sm")]: {
+      color: "rgba(0, 0, 0, 0.87)",
+      textShadow: "none",
+      filter: "none"
+    }
   },
   socialIcons: {
     position: "relative",

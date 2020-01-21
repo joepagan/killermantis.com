@@ -20,7 +20,7 @@ export default function SectionMedia() {
           <h2>Media</h2>
         </div>
         <GridContainer>
-          <GridItem xs={12} sm={12} md={6} lg={6}>
+          <GridItem xs={12} sm={12} md={6} lg={6} className={classes.item}>
             <ResponsiveEmbed
               title="SoundCloud Player, Killer Mantis"
               src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/719317062&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">'

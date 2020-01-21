@@ -92,6 +92,7 @@ export default function Header(props) {
         </Hidden>
         <Hidden mdUp>
           <IconButton
+            className={classes.bars}
             color="inherit"
             aria-label="open drawer"
             onClick={handleDrawerToggle}
@@ -121,7 +122,7 @@ export default function Header(props) {
 }
 
 Header.defaultProp = {
-  color: "white"
+  color: "dark"
 };
 
 Header.propTypes = {

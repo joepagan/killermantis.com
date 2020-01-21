@@ -49,7 +49,24 @@ export default function Components(props) {
             <GridContainer>
               <GridItem>
                 <div className={classes.brand}>
-                  <h1 className={classes.title}>Killer Mantis</h1>
+                  <h1 className={classes.title}>
+                    <div className={classes.titleLine}>
+                      <span className={classes.titleLetter}>K</span>
+                      <span className={classes.titleLetter}>i</span>
+                      <span className={classes.titleLetter}>l</span>
+                      <span className={classes.titleLetter}>l</span>
+                      <span className={classes.titleLetter}>e</span>
+                      <span className={classes.titleLetter}>r</span>
+                    </div>
+                    <div className={classes.titleLine}>
+                      <span className={classes.titleLetter}>M</span>
+                      <span className={classes.titleLetter}>a</span>
+                      <span className={classes.titleLetter}>n</span>
+                      <span className={classes.titleLetter}>t</span>
+                      <span className={classes.titleLetter}>i</span>
+                      <span className={classes.titleLetter}>s</span>
+                    </div>
+                    </h1>
                   <h3 className={classes.subtitle}>
                     A 5-piece from Yorkshire ( Leeds & Harrogate ).
                   </h3>
