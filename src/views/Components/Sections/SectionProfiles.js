@@ -15,8 +15,10 @@ import styles from "assets/jss/material-kit-react/views/componentsSections/profi
 
 import rinderImage from "assets/img/profiles/rinder-400.webp";
 import rinderVideo from "assets/video/rinder.mp4";
-import tiph from "assets/img/profiles/tiph.webp";
-import liam from "assets/img/profiles/liam.webp";
+import tiphImage from "assets/img/profiles/tiph-400.webp";
+import tiphVideo from "assets/video/tiph.mp4";
+import liamImage from "assets/img/profiles/liam-400.webp";
+import liamVideo from "assets/video/liam.mp4";
 import hickeyImage from "assets/img/profiles/hickey-400.webp";
 import hickeyVideo from "assets/video/hickey.mp4";
 import joeImage from "assets/img/profiles/joe-400.webp";
@@ -38,19 +40,37 @@ export default function SectionProfile() {
           <GridContainer>
             <GridItem xs={6} md={4}>
               <h5 className={classes.name}>Tiph Milstar (Propz)</h5>
-              <LazyLoad once height={388}>
-                <img
-                  src={tiph}
-                  alt="Tiph Milstar"
-                  className={
-                    classes.imgRaised +
-                    " " +
-                    classes.imgRounded +
-                    " " +
-                    classes.imgFluid
-                  }
-                />
-              </LazyLoad>
+              <div className={classes.playerWrapper}>
+                <LazyLoad once height={388}>
+                  <ReactPlayer
+                    className={
+                      classes.player +
+                      " " +
+                      classes.imgRaised +
+                      " " +
+                      classes.imgRounded +
+                      " " +
+                      classes.imgFluid
+                    }
+                    url={tiphVideo}
+                    config={{
+                      file: {
+                        attributes: {
+                          poster: tiphImage
+                        }
+                      }
+                    }}
+                    light={isMobile ? tiphImage : false}
+                    playsinline
+                    autoPlay
+                    muted
+                    playing
+                    loop
+                    width="100%"
+                    height="100%"
+                  />
+                </LazyLoad>
+              </div>
               <h6 className={classes.role}>Lead Vocals</h6>
             </GridItem>
             <GridItem xs={6} md={4}>
@@ -90,19 +110,37 @@ export default function SectionProfile() {
             </GridItem>
             <GridItem xs={6} md={4}>
               <h5 className={classes.name}>Liam Sullivan</h5>
-              <LazyLoad once height={388}>
-                <img
-                  src={liam}
-                  alt="Liam Sullivan"
-                  className={
-                    classes.imgRaised +
-                    " " +
-                    classes.imgRounded +
-                    " " +
-                    classes.imgFluid
-                  }
-                />
-              </LazyLoad>
+              <div className={classes.playerWrapper}>
+                <LazyLoad once height={388}>
+                  <ReactPlayer
+                    className={
+                      classes.player +
+                      " " +
+                      classes.imgRaised +
+                      " " +
+                      classes.imgRounded +
+                      " " +
+                      classes.imgFluid
+                    }
+                    url={liamVideo}
+                    config={{
+                      file: {
+                        attributes: {
+                          poster: liamImage
+                        }
+                      }
+                    }}
+                    light={isMobile ? liamImage : false}
+                    playsinline
+                    autoPlay
+                    muted
+                    playing
+                    loop
+                    width="100%"
+                    height="100%"
+                  />
+                </LazyLoad>
+              </div>
               <h6 className={classes.role}>Drums, Percussion</h6>
             </GridItem>
             <GridItem xs={6} md={4}>
