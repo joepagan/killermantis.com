@@ -18,9 +18,21 @@ export default function SectionText() {
       <div className={classes.container}>
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={8}>
-            <h2>We are Killer Mantis!</h2>
-            <p className={classes.paragraph}>Killer Mantis (formerly known as Impyus) have just released their second Demo EP titled Clarity. Following on from their first from 2016 titled Tiptoe, featuring regularly on BBC Introducing.</p>
-            <p className={classes.paragraph}>A dynamic & collaborative writing style has helped Impyus achieve their unique sound which includes: interesting rhythms, unusual song structures, and, a sprinkling of hip hop. Mark’s unconventional fretwork perfectly compliments Matt’s soundscape of synth which provides Tiph with a platform to deliver his thought provoking lyrics in the rhythmic and melodic style he is known for. This all lies on top of an inseparable rhythm section from Liam, on Drums and Joe, on Bass - intertwining syncopation with a strong, driving undertone.</p>
+            <h2>Killer Mantis!</h2>
+            <p className={classes.paragraph}>
+              Killer Mantis ( formerly known as Impyus ) have been making noise for 5 years.
+              <br />
+              The 5 boys from Yorkshire have been rocking the stages of the North since they joined forces.
+            </p>
+            <p className={classes.paragraph}>
+              They’ve got raps, fantastic beats, killer synths, rockin’ riffs and those amazing catchy choruses.
+            </p>
+            <p className={classes.paragraph}>
+              With over 50 gigs under their belt, they have decided to step things up with a fresh direction on a new batch of songs, a name change to suit.
+            </p>
+            <p className={classes.paragraph}>
+              Currently Killer Mantis are underway creating a collection of recordings to push in 2020 at Mantis HQ.
+            </p>
           </GridItem>
         </GridContainer>
       </div>
