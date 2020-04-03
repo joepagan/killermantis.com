@@ -65,7 +65,7 @@ function RightHeaderLinks(props) {
             classes={{ tooltip: classes.tooltip }}
           >
           <Button
-            href="https://drive.google.com/drive/u/0/folders/0Bzsy3pa2O7zCZHdnT213SFBjVnc"
+            href="https://drive.google.com/open?id=1DdbOtK9zzpMCeecGV4adAotR6499oqzr"
             color="transparent"
             target="_blank"
             rel="noopener noreferrer"
