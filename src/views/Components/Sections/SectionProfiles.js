@@ -146,7 +146,7 @@ export default function SectionProfile() {
               <h6 className={classes.role}>Drums, Percussion</h6>
             </GridItem>
             <GridItem xs={6} md={4}>
-              <h5 className={classes.name}>Hick</h5>
+              <h5 className={classes.name}>Hickey</h5>
               <div className={classes.playerWrapper}>
                 <LazyLoad once height={388}>
                   <ReactPlayer
