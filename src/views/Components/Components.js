@@ -87,9 +87,9 @@ export default function Components(props) {
         <LazyLoad once height={200} placeholder={<div id="profiles"></div>}>
           <SectionProfiles />
         </LazyLoad>
-        <LazyLoad once height={200} placeholder={<div id="shows"></div>}>
+        {/* <LazyLoad once height={200} placeholder={<div id="shows"></div>}>
           <SectionShows />
-        </LazyLoad>
+        </LazyLoad> */}
         {/* <SectionTable /> */}
       </div>
       <Footer />
