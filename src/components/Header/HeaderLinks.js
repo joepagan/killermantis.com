@@ -129,7 +129,7 @@ function RightHeaderLinks(props) {
           </Button>
         </Tooltip>
       </ListItem>
-      <ListItem className={classes.listItem}>
+      {/* <ListItem className={classes.listItem}>
         <Tooltip
           id="spotify-tooltip"
           title="Follow us on Spotify"
@@ -146,7 +146,7 @@ function RightHeaderLinks(props) {
             <FontAwesomeIcon className={classes.icons} icon={faSpotify} />
           </Button>
         </Tooltip>
-      </ListItem>
+      </ListItem> */}
       <ListItem className={classes.listItem}>
         <Tooltip
           id="spotify-tooltip"
