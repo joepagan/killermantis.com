@@ -174,7 +174,7 @@ function RightHeaderLinks(props) {
         >
           <Button
             color="transparent"
-            href="https://www.youtube.com/killermantis?ref=killermantis-website"
+            href="https://www.youtube.com/channel/UCjXeqCAvBsTNb2FlemGRhKQ?ref=killermantis-website"
             target="_blank"
             rel="noopener noreferrer"
             className={classes.navLink}
