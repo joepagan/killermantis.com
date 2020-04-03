@@ -68,7 +68,7 @@ export default function Components(props) {
                     </div>
                     </h1>
                   <h3 className={classes.subtitle}>
-                    A 5-piece from Yorkshire ( Leeds & Harrogate ).
+                    A 6-piece from Yorkshire.
                   </h3>
                 </div>
               </GridItem>

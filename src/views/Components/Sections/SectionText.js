@@ -22,7 +22,7 @@ export default function SectionText() {
             <p className={classes.paragraph}>
               Killer Mantis ( formerly known as Impyus ) have been making noise for 5 years.
               <br />
-              The 5 boys from Yorkshire have been rocking the stages of the North since they joined forces.
+              The 6 boys from Yorkshire have been rocking the stages of the North since they joined forces.
             </p>
             <p className={classes.paragraph}>
               They’ve got raps, fantastic beats, killer synths, rockin’ riffs and those amazing catchy choruses.
