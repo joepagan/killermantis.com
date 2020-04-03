@@ -83,7 +83,7 @@ function RightHeaderLinks(props) {
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            href="https://twitter.com/killermantis?ref=killermantis-website"
+            href="https://twitter.com/killermantisuk?ref=killermantis-website"
             target="_blank"
             rel="noopener noreferrer"
             color="transparent"
