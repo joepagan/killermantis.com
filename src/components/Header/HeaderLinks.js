@@ -120,7 +120,7 @@ function RightHeaderLinks(props) {
         >
           <Button
             color="transparent"
-            href="https://www.instagram.com/killermantis?ref=killermantis-website"
+            href="https://www.instagram.com/killermantismusic?ref=killermantis-website"
             target="_blank"
             rel="noopener noreferrer"
             className={classes.navLink}
