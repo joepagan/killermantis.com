@@ -112,6 +112,9 @@ const headerLinksStyle = theme => ({
       filter: "none"
     }
   },
+  svg: {
+    fill: mantisGreen,
+  },
   socialIcons: {
     position: "relative",
     fontSize: "20px !important",

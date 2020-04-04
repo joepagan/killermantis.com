@@ -18,7 +18,8 @@ const componentsStyle = theme => ({
     color: mantisGreen,
     // color: "#fff",
     lineHeight: "1.5",
-    width: "100%"
+    width: "100%",
+    zIndex: "2",
   },
   titleLine: {
     display: "flex",

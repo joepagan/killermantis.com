@@ -44,11 +44,11 @@ function LeftHeaderLinks(props) {
           Profiles
         </ScrollLink>
       </ListItem>
-      <ListItem className={classes.listItem}>
+      {/* <ListItem className={classes.listItem}>
         <ScrollLink className={classes.scrollLink + " " + classes.navLink} to="shows" spy={true} smooth="easeOutQuint" duration={500} color="transparent">
           Shows
         </ScrollLink>
-      </ListItem>
+      </ListItem> */}
     </List>
   );
 }
@@ -180,6 +180,36 @@ function RightHeaderLinks(props) {
             className={classes.navLink}
           >
             <FontAwesomeIcon className={classes.icons} icon={faYoutube} />
+          </Button>
+        </Tooltip>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Tooltip
+          id="reverbnation-tooltip"
+          title="Reverbnation"
+          placement={window.innerWidth > 959 ? "top" : "left"}
+          classes={{ tooltip: classes.tooltip }}
+        >
+          <Button
+            color="transparent"
+            href="https://www.reverbnation.com/killermantis?ref=killermantis-website"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={classes.navLink}
+          >
+            <svg
+              className={classes.svg}
+              enableBackground="new 0 0 568.6 76"
+              height="87.983047"
+              viewBox="0 0 87.983051 87.983047"
+              width="87.983047"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m78.418524 32.452812-25.968893-.085424-8.200702-24.7729565-8.029855 24.7729565-25.968893.085424h.08542l20.928878 15.20547-8.115279 24.858381h.08542l21.185155-15.290894 21.014301 15.290894-8.115279-24.772957z"
+                strokeWidth=".85424"
+              />
+            </svg>
           </Button>
         </Tooltip>
       </ListItem>

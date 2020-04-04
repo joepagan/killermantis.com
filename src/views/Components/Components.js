@@ -13,13 +13,15 @@ import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Parallax from "components/Parallax/Parallax.js";
+import Logo from "components/Logo/Logo.js";
 // sections for this page
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import SectionMedia from "./Sections/SectionMedia.js";
 import SectionProfiles from "./Sections/SectionProfiles.js";
 import SectionText from "./Sections/SectionText.js";
-import SectionShows from "./Sections/SectionShows.js";
+// import SectionShows from "./Sections/SectionShows.js";
 // import SectionTable from "./Sections/SectionTable.js";
+import SectionSocials from "./Sections/SectionSocials.js";
 
 import hero from "assets/img/heroes/hero-bg.webp";
 import styles from "assets/jss/material-kit-react/views/components.js";
@@ -66,7 +68,8 @@ export default function Components(props) {
                       <span className={classes.titleLetter}>i</span>
                       <span className={classes.titleLetter}>s</span>
                     </div>
-                    </h1>
+                  </h1>
+                  <Logo />
                   <h3 className={classes.subtitle}>
                     A 6-piece from Yorkshire.
                   </h3>
@@ -91,6 +94,9 @@ export default function Components(props) {
           <SectionShows />
         </LazyLoad> */}
         {/* <SectionTable /> */}
+        <LazyLoad once height={200} placeholder={<div id="socials"></div>}>
+          <SectionSocials />
+        </LazyLoad>
       </div>
       <Footer />
     </div>
