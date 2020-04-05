@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4e0c89255ea58b8f1eead0d1d7471c59",
+    "revision": "db1ed5397f84f47f81c317be7609047c",
     "url": "/index.html"
   },
   {
-    "revision": "b6384d83c6ef306645b1",
+    "revision": "9583bf260df4a4fb3730",
     "url": "/static/css/main.893da073.chunk.css"
   },
   {
@@ -16,16 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.d37883e9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b6384d83c6ef306645b1",
-    "url": "/static/js/main.08ee70c5.chunk.js"
+    "revision": "9583bf260df4a4fb3730",
+    "url": "/static/js/main.ea2071ea.chunk.js"
   },
   {
     "revision": "2bb76bac66fb614c720c",
     "url": "/static/js/runtime-main.05c8e2c5.js"
   },
   {
-    "revision": "8b43d14b18f244571a0fb0d341f44c02",
-    "url": "/static/media/KillerMantis-Logo-Colour.8b43d14b.svg"
+    "revision": "2bd244f31a4e343b00cfa503b2788165",
+    "url": "/static/media/KillerMantis-Logo-White-Fill.2bd244f3.svg"
   },
   {
     "revision": "7dbed63bb73b54d125e06893e802a682",

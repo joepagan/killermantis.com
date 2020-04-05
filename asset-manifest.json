@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.893da073.chunk.css",
-    "main.js": "/static/js/main.08ee70c5.chunk.js",
-    "main.js.map": "/static/js/main.08ee70c5.chunk.js.map",
+    "main.js": "/static/js/main.ea2071ea.chunk.js",
+    "main.js.map": "/static/js/main.ea2071ea.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.05c8e2c5.js",
     "runtime-main.js.map": "/static/js/runtime-main.05c8e2c5.js.map",
     "static/js/2.d37883e9.chunk.js": "/static/js/2.d37883e9.chunk.js",
     "static/js/2.d37883e9.chunk.js.map": "/static/js/2.d37883e9.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.d5ef97b9a82a0df4cc12b4e48a8f5662.js": "/precache-manifest.d5ef97b9a82a0df4cc12b4e48a8f5662.js",
+    "precache-manifest.1c028414875a1d2dd90db0830baf3f98.js": "/precache-manifest.1c028414875a1d2dd90db0830baf3f98.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.893da073.chunk.css.map": "/static/css/main.893da073.chunk.css.map",
     "static/js/2.d37883e9.chunk.js.LICENSE.txt": "/static/js/2.d37883e9.chunk.js.LICENSE.txt",
-    "static/media/KillerMantis-Logo-Colour.8b43d14b.svg": "/static/media/KillerMantis-Logo-Colour.8b43d14b.svg",
+    "static/media/KillerMantis-Logo-White-Fill.2bd244f3.svg": "/static/media/KillerMantis-Logo-White-Fill.2bd244f3.svg",
     "static/media/cj-400.webp": "/static/media/cj-400.7dbed63b.webp",
     "static/media/cj.mp4": "/static/media/cj.5efe7f6b.mp4",
     "static/media/hero-bg.webp": "/static/media/hero-bg.56e12e9f.webp",
@@ -31,6 +31,6 @@
     "static/js/runtime-main.05c8e2c5.js",
     "static/js/2.d37883e9.chunk.js",
     "static/css/main.893da073.chunk.css",
-    "static/js/main.08ee70c5.chunk.js"
+    "static/js/main.ea2071ea.chunk.js"
   ]
 }
