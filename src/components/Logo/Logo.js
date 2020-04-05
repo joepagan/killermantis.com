@@ -2,7 +2,7 @@ import React from "react";
 // Animation library
 import anime from "animejs/lib/anime.es.js";
 // Logosvg
-import { ReactComponent as LogoSvg } from "assets/img/KillerMantis-Logo-Colour.svg";
+import { ReactComponent as LogoSvg } from "assets/img/KillerMantis-Logo-White-Fill.svg";
 
 class Logo extends React.Component {
   constructor(props) {
@@ -13,12 +13,15 @@ class Logo extends React.Component {
     const targets = [
       ...this.myRef.current.querySelectorAll("path, polygon, polyline")
     ];
+    console.log(targets);
     anime({
       targets,
-      opacity: [0, 1],
+      opacity: [0, 0.5],
       easing: "easeInOutSine",
-      duration: 300,
-      delay: function(el, i) { return i * 25 },
+      duration: 1000,
+      delay: function(el, i) {
+        return i * 250;
+      },
       loop: false
     });
   }
@@ -34,7 +37,7 @@ class Logo extends React.Component {
           top: "50%",
           left: "50%",
           transform: "translateY(-50%) translateX(-50%)",
-          zIndex: "1",
+          zIndex: "1"
         }}
       />
     );
