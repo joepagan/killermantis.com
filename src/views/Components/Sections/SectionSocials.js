@@ -1,5 +1,4 @@
 import React from "react";
-import LazyLoad from "react-lazyload";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -17,7 +16,7 @@ import {
   faFacebookF,
   faInstagram,
   faSoundcloud,
-  faYoutube
+  faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 
 import styles from "assets/jss/material-kit-react/views/componentsSections/socialsStyle.js";

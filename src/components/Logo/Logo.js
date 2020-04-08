@@ -19,10 +19,10 @@ class Logo extends React.Component {
       opacity: [0, 0.5],
       easing: "easeInOutSine",
       duration: 1000,
-      delay: function(el, i) {
+      delay: (el, i) => {
         return i * 250;
       },
-      loop: false
+      loop: false,
     });
   }
 

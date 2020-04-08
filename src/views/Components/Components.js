@@ -19,8 +19,7 @@ import HeaderLinks from "components/Header/HeaderLinks.js";
 import SectionMedia from "./Sections/SectionMedia.js";
 import SectionProfiles from "./Sections/SectionProfiles.js";
 import SectionText from "./Sections/SectionText.js";
-// import SectionShows from "./Sections/SectionShows.js";
-// import SectionTable from "./Sections/SectionTable.js";
+import SectionShows from "./Sections/SectionShows.js";
 import SectionSocials from "./Sections/SectionSocials.js";
 
 import hero from "assets/img/heroes/hero-bg.webp";
@@ -90,10 +89,9 @@ export default function Components(props) {
         <LazyLoad once height={200} placeholder={<div id="profiles"></div>}>
           <SectionProfiles />
         </LazyLoad>
-        {/* <LazyLoad once height={200} placeholder={<div id="shows"></div>}>
+        <LazyLoad once height={200} placeholder={<div id="shows"></div>}>
           <SectionShows />
-        </LazyLoad> */}
-        {/* <SectionTable /> */}
+        </LazyLoad>
         <LazyLoad once height={200} placeholder={<div id="socials"></div>}>
           <SectionSocials />
         </LazyLoad>

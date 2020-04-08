@@ -44,11 +44,11 @@ function LeftHeaderLinks(props) {
           Profiles
         </ScrollLink>
       </ListItem>
-      {/* <ListItem className={classes.listItem}>
+      <ListItem className={classes.listItem}>
         <ScrollLink className={classes.scrollLink + " " + classes.navLink} to="shows" spy={true} smooth="easeOutQuint" duration={500} color="transparent">
           Shows
         </ScrollLink>
-      </ListItem> */}
+      </ListItem>
     </List>
   );
 }
