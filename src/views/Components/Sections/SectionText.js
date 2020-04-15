@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
@@ -13,6 +13,12 @@ const useStyles = makeStyles(styles);
 
 export default function SectionText() {
   const classes = useStyles();
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://c6.patreon.com/becomePatronButton.bundle.js";
+    script.async = true;
+    document.body.appendChild(script);
+  });
   return (
     <div id="about" className={classes.section}>
       <div className={classes.container}>
@@ -33,6 +39,14 @@ export default function SectionText() {
             <p className={classes.paragraph}>
               Currently Killer Mantis are underway creating a collection of recordings to push in 2020 at Mantis HQ.
             </p>
+            <h3>Support us!</h3>
+            <p className={classes.paragraph}>You can support us right now on Patreon!</p>
+            <a
+              href="https://www.patreon.com/bePatron?u=28088162"
+              data-patreon-widget-type="become-patron-button"
+            >
+              Become a Patron!
+            </a>
           </GridItem>
         </GridContainer>
       </div>

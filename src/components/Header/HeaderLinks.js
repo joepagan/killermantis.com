@@ -10,7 +10,7 @@ let ScrollLink = Scroll.Link;
 
 // Font awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitter, faFacebookF, faInstagram, faSpotify, faSoundcloud, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faTwitter, faFacebookF, faInstagram, faSpotify, faSoundcloud, faYoutube, faPatreon } from '@fortawesome/free-brands-svg-icons'
 
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
@@ -212,6 +212,24 @@ function RightHeaderLinks(props) {
             </svg>
           </Button>
         </Tooltip>
+
+        <Tooltip
+          id="patreon-tooltip"
+          title="Support us on Patreon"
+          placement={window.innerWidth > 959 ? "top" : "left"}
+          classes={{ tooltip: classes.tooltip }}
+        >
+          <Button
+            color="transparent"
+            href="https://www.patreon.com/bePatron?u=28088162&redirect_uri=https://killermantis.com&utm_medium=headerLink"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={classes.navLink}
+          >
+            <FontAwesomeIcon className={classes.icons} icon={faPatreon} />
+          </Button>
+        </Tooltip>
+
       </ListItem>
     </List>
   );

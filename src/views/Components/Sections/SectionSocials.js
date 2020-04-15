@@ -17,6 +17,7 @@ import {
   faInstagram,
   faSoundcloud,
   faYoutube,
+  faPatreon,
 } from "@fortawesome/free-brands-svg-icons";
 
 import styles from "assets/jss/material-kit-react/views/componentsSections/socialsStyle.js";
@@ -143,6 +144,23 @@ export default function SectionShows() {
                     strokeWidth=".85424"
                   />
                 </svg>
+              </Button>
+            </Tooltip>
+
+            <Tooltip
+              id="patreon-tooltip"
+              title="Support us on Patreon"
+              placement={window.innerWidth > 959 ? "top" : "left"}
+              classes={{ tooltip: classes.tooltip }}
+            >
+              <Button
+                color="transparent"
+                href="https://www.patreon.com/bePatron?u=28088162&redirect_uri=https://killermantis.com&utm_medium=headerLink"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={classes.navLink}
+              >
+                <FontAwesomeIcon className={classes.icons} icon={faPatreon} />
               </Button>
             </Tooltip>
           </GridItem>

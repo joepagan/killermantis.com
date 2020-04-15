@@ -60,6 +60,9 @@ const headerLinksStyle = theme => ({
       color: mantisGreen,
       background: "rgba(200, 200, 200, 0.2)"
     },
+    [theme.breakpoints.down("md")]: {
+      padding: "0.8rem",
+    },
     [theme.breakpoints.down("sm")]: {
       width: "calc(100% - 30px)",
       marginLeft: "15px",
